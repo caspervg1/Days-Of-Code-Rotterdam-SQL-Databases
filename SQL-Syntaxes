@@ -1,0 +1,29 @@
+CREATE TABLE user_accounts 
+  (
+    id INT PRIMARY KEY NOT NULL, --this is the user id 
+    email VARCHAR(256), -- this is the users email address
+    registration_date DATE -- registration DATE
+  );
+
+INSERT INTO user_accounts VALUES
+  (1,'casper.van.gent@gmail.com','22/07/2016'),
+  (2,'test@gmail.com','23/07/2016')
+
+SELECT * FROM user_accounts 
+
+SELECT [COLUMN NAME(S)] FROM [TABLE NAME(s)]
+WHERE [COLUMN NAME] = [CONDITION]
+
+SELECT registration_date FROM user_accounts
+WHERE email = 'casper.van.gent@gmail.com'
+
+SELECT [COLUMN NAME(S)] FROM [TABLE NAME(s)]
+WHERE [COLUMN NAME] = [CONDITION]
+  AND [COLUMN NAME] = [CONDITION]
+  AND [COLUMN NAME] = [CONDITION]
+
+
+UPDATE [TABLE NAME] SET [COLUMN NAME]=[VALUE]
+WHERE [CONDITION (X=Y)]
+
+DELETE FROM [TABLE NAME] WHERE [CONDITION (X=Y)]
